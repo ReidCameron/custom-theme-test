@@ -1,0 +1,8 @@
+{% assign tpl_link = linklists["design-template"] %}
+{% if tpl_link != blank %} {% for link in tpl_link.links %}
+		{% assign collection = link.object %}
+		<div class="grid__item small--one-half medium-up--one-third" >
+		{% include 'collection-grid-item' %}
+		</div>
+      {% endfor %} 
+{% endif %}
